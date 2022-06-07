@@ -1,0 +1,296 @@
+/* CSS para la página principal */
+/* Boton de iniciar */
+body {
+    background-color: #E5E5E5;
+}
+
+h1 {
+    color: #0A3871;
+    text-align: center;
+}
+
+#iniciar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    padding-left: 82px;
+    gap: 8px;
+
+    position: absolute;
+    width: 317px;
+    height: 114px;
+    left: 561px;
+    top: 250px;
+
+    background: #0A3871;
+    border-radius: 24px;
+
+    /* Estilo de letra del boton */
+    width: 269px;
+    height: 66px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+
+}
+
+/* Boton de agregar*/
+#agregar {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 17px 0px 38px 34px;
+    gap: 8px;
+
+    position: absolute;
+    width: 280px;
+    height: 67px;
+    left: 579px;
+    top: 350px;
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    /* Estilo de letra del boton */
+    width: 232px;
+    height: 19px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #0A3871;
+
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+/* Fin del CSS de la página principal */
+
+/*Inicio del CSS de la página index-jugar*/
+#palabra-a-adivinar span {
+    vertical-align: bottom;
+    font-size: 2em;
+    border-bottom: 2px solid blue;
+    width: 30px;
+    text-align: center;
+    margin-right: 6px;
+    display: inline-block;
+    color: #0A3871;
+}
+
+#teclado {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    color: aqua;
+}
+
+#teclado button {
+    height: 30px;
+}
+
+#layout {
+    position: absolute;
+    top: 465px;
+}
+
+#guardar {                      /*CSS página index-agregar */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-left: 107px;
+    padding-top: 25px;
+    gap: 8px;
+
+    width: 332px;
+    height: 67px;
+
+    background: #0A3871;
+    border-radius: 24px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin: 301px 533px 50px;
+
+}
+
+#cancelar {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-left: 132px;
+    padding-top: 25px;
+    gap: 8px;
+
+    width: 332px;
+    height: 67px;
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+    margin: 0px 532px
+}
+
+
+#agregar-nueva-palabra {        /*oculta elementos del HTML */
+    display: none;
+}
+
+#jugar-ahorcado {
+    display: none;
+}
+
+#pantalla-principal {
+    display: block;
+}
+
+#nueva-palabra {                /*Ingrese palabra */
+    position: absolute;
+    width: 299px;
+    height: 48px;
+    left: 559px;
+    top: 256px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+
+    color: black;
+    border: none;
+    background-color: transparent;
+}
+
+#demo {
+    color: #0A3871;
+}
+
+main {
+    margin-top: 30px;
+}
+
+#layout {
+    display: inline-block;
+    position: absolute;
+    top: 400px;
+    right: 300px;
+    
+
+
+}
+
+#obtener-palabra {
+    position:static;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 23px 115px 0px;
+    gap: 8px;
+    margin: -161px 0px 30px;
+    color:  #FFFFFF;
+    width: 332px;
+    height: 67px;
+
+
+    background: #0A3871;
+    border-radius: 24px;
+
+  
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+#desistir {
+    display: flex;
+    position:static;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 26px 134px 0px;
+
+    top: 100px;
+    gap: 8px;
+    margin: 0px 0px -36px;
+    color:  #FFFFFF;
+    width: 332px;
+    height: 67px;
+
+    background: #0A3871;
+    border-radius: 24px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+::placeholder{
+    color: black;
+}
+
+#pie_de_pagina{
+    width: 100%;
+    position: fixed;
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    margin-top: 53px;
+    bottom: 0;
+}
+
+#ahorcado-imagen > img{
+    width: 45%;
+}
+
+#iniciar:hover{
+    background: #3B83BD;
+}
+
+#agregar:hover{
+    background: rgb(156, 220, 231);
+}
+
+#guardar:hover{
+    background: #3B83BD;
+}
+
+#cancelar:hover{
+    background: wheat;
+
+}
+
+#obtener-palabra:hover{
+    background: #3B83BD;
+}
+
+#desistir:hover{
+    background: wheat;
+}

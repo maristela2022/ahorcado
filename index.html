@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Challenge 02 Ahorcado</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Juego del Ahorcado</h1>
+    </header>
+    <div id="pantalla-principal">
+        <img src="imagenes/logo.png">
+        <button type="button" id="iniciar" onclick="mostrarJuego();">Iniciar juego</button>
+        <button type="button" id="agregar" onclick="mostrarAgregarPalabra();">Agregar nueva palabra</button>
+    </div>
+
+
+    <div id="agregar-nueva-palabra">                    <!--AGREGAR PALABRA-->
+        <form id="reset-form">
+            <input type="text" placeholder="Ingrese una palabra" class="input-texto" id="nueva-palabra"></input>
+            <button type="button" id="guardar" value="Reset form" onclick="agregarPalabra();">Guardar y empezar</button>
+            <button type="button" id="cancelar" onclick="mostrarMenuPrincipal();">Cancelar</button>
+        </form>
+
+        <p id="demo">Max. de 8 letras</p>
+    </div>
+
+
+    <section id="jugar-ahorcado">                       <!--juego-->
+        <div id="ahorcado-imagen">
+
+        </div>
+        <section id="layout">
+            <div id="botones">
+                <button type="button" id="obtener-palabra">Obtener palabra</button>
+                <button type="button" id="desistir" onclick="mostrarMenuPrincipal();">Desistir</button>
+                <br>
+                <br>
+
+                <p id=palabra-a-adivinar>
+
+                </p>
+            </div>
+            <div id="teclado">
+                <button>Q</button>
+                <button>W</button>
+                <button>E</button>
+                <button>R</button>
+                <button>T</button>
+                <button>Y</button>
+                <button>U</button>
+                <button>I</button>
+                <button>O</button>
+                <button>P</button>
+                <button>A</button>
+                <button>S</button>
+                <button>D</button>
+                <button>F</button>
+                <button>G</button>
+                <button>H</button>
+                <button>J</button>
+                <button>K</button>
+                <button>L</button>
+                <button>Ñ</button>
+                <button>Z</button>
+                <button>X</button>
+                <button>C</button>
+                <button>V</button>
+                <button>B</button>
+                <button>N</button>
+                <button>M</button>
+            </div>
+        </section>
+    </section>
+
+
+    <footer id="pie_de_pagina">Diseño Estela Gomez</footer>
+
+
+    <script src="agregar.js"></script>
+    <script src="sorteo.js"></script>
+
+
+</body>
+
+
+</html>
